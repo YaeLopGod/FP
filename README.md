@@ -18,4 +18,4 @@ _italica_
 2. tema 2
 3. tema 3
 
-
+!imagien_sistemasdeInformación https://concepto.de/sistema-de-informacion/
