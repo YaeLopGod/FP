@@ -1,0 +1,112 @@
+#include <sstream>
+#include <string>
+#include <iomanip>
+#include <algorithm>
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	cout << boolalpha;
+	bool bb = true;
+	cout << bb << endl;
+	cout << endl;
+
+	int a = 10;
+	int b = 20;
+	int c;
+	float x = 15.5;
+	float y = 5.2; 
+	float z; 
+
+	float y = 3.2;
+	float z; 
+
+	cout << "a=" << a << " b=" << b << endl; 
+	cout << "x=" << x << " y=" << y << endl; 
+	cout << endl; 
+
+	//igualdad 
+	cout << "(a==b)? -->" << (a == b) << endl;
+	cout << "(x==y)? -->" << (x == y) << endl; 
+	cout << endl; 
+
+	//desigualdad
+	cout << "(a != b)? -->" << (a == b) << endl; 
+	cout << "(x != y)? -->" << (x == y) << endl;
+	cout << endl; 
+
+	//mayor que 
+	cout << "(a>b)? -->" << (a > b) << endl;
+	cout << "(x>y)? -->" << (x > y) << endl;
+	cout << endl; 
+
+	//menor que 
+	cout << "(a<b)? -->" << (a < b) << endl;
+	cout << "(x<y)? -->" << (x < y) << endl;
+	cout << endl; 
+
+	//mayor o igual que 
+	cout << "(a>=b)? -->" << (a >= b) << endl;
+	cout << "(x>=y)? -->" << (x >= y) << endl;
+
+	//menor o igual que 
+	cout << "(a<=b)? -->" << (a <= b) << endl;
+	cout << "(x<=y)? -->" << (x <= y) << endl;
+	cout << endl; 
+
+	//comparaciones de valores mixtos 
+	cout << "(a>y)? -->" << (a > y) << endl;
+	cout << "(x>b)? -->" << (x > b) << endl;
+	cout << endl; 
+
+	//negativos
+	cout << "(a>(-b))? -->" << (a > -b) << endl;
+	cout << "(x<(-y))? -->" << (a < -y) << endl;
+	cout << endl; 
+
+	//combinaciones anidadas
+	cout << "(a > b - 10)? -->" << (a > b - 10) << endl;
+	cout << "(x <= y + 10.3)? -->" << (x <= y + 10.3) << endl;
+	cout << endl; 
+
+	//____________________________________________________________________________________________________________________________________________________________________________________
+	//____________________________________________________________________________________________________________________________________________________________________________________
+
+	int dia; 
+	int mes; 
+	int año; 
+	int mes_dia; 
+	int diain; 
+	int mesin; 
+
+	// 11. Comparación con constantes
+	cout << (a == 10) << endl;
+	cout << (y == 5.2) << endl;
+
+	// 12. Comparación con los resultados de las operaciones aritméticas
+	cout << ((a + b) <
+		(x * y)) << endl;
+	cout << ((b - a) >=
+		(x / y)) << endl;
+
+	// 13. Comparación de resultados negativos y positivos
+	cout << (-a < b) << endl;
+	cout << ((-x) > y) << endl;
+
+	// 14. Combinación de aritmética y comparación
+	cout << ((a * b) >
+		(x - y)) << endl;
+	cout << ((b / a) <=
+		(x + y)) << endl;
+
+	// 15. Comparaciones encadenadas
+	cout << (a < b and b < x)
+		<< endl;
+	cout << (y > x and x > a)
+		<< endl;
+
+	// 16. Comparación de módulos
+	cout << ((b % a) == 0)
+		<< endl;
+}
