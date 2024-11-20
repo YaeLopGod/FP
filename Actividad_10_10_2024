@@ -1,0 +1,77 @@
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+using namespace std;
+
+int main()
+{
+    std::cout << "Hello World!\n";
+
+    int a = 10;
+    int b = 20;
+    int c; 
+
+    float x = 15.5;
+    float y = 5.2; 
+    float z ; 
+
+
+    //1. Adición 
+    c = a + b; cout << endl; 
+    z = x + y; cout << endl; 
+    cout << "Operación adiciones de enteros: "; cout << c; cout << endl; 
+    cout << "operación adiciones con decimal: "; cout << c; cout << endl;
+
+
+    //2. Sustracción
+    c = a - b;
+    z = x - y; 
+    cout << "operacion sutracciones de enteros: "; cout << c; cout << endl;
+    cout << "operacion sustraccion de decimales: "; cout << z; cout << endl; 
+    
+
+    //3. Multiplicación
+    c = a * b; 
+    z = x * y;
+    cout << "operacion multiplicacion de enteros: "; cout << c; cout << endl; 
+    cout << "operacion multiplicacion de decimales: "; cout << z; cout << endl; 
+  
+
+    //4. División 
+    c = b / a; 
+    z = x / y; 
+    cout << "operacion division de enterios: "; cout << c; cout << endl; 
+    cout << "operacion division de decimales: "; cout << z; cout << endl; 
+
+
+    //6. Operaciones Mixtas 
+    z = a + x; 
+    z = b - y; 
+    z = a * y;
+    z = b / x;
+    z = (a + b) * x; 
+    cout << "operaciones mixtas: "; cout << z; cout << endl; 
+
+
+    //8. Combinacion de numeros enteros 
+    z = a + x - b / 2.0 + y * 1.5; 
+    cout << "operacion combinacion de numeros enteros "; cout << c; cout << endl; 
+
+    //9. Combinaciones más complejas 
+    z = (a + x) * (b - y) / (a * y); 
+    cout << "operacion combinaciones mas complejas: "; cout << z; cout << endl; 
+
+
+    //12. 
+    a++; //a=a+1
+    cout << "Suma Unitaria: "; cout << a; cout << endl;
+    b--; 
+    cout << "Resta Unitaria: "; cout << b; cout << endl;
+
+
+    x += 2.5; cout << "el resultado de sumar 2.5 a 'x' es: "; cout << x; cout << endl; 
+    y -= 1.2; cout << "el resultado de restar 1.2 a 'y' es: "; cout << y; cout << endl;
+}
+
+//actividad hecha en clase el 10/10/2024

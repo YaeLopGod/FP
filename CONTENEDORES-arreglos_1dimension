@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std; 
+
+int main()
+{
+	const int TAMANO = 10;
+	int naturales[TAMANO]
+	{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	/*cout << naturales[2] << endl;
+	naturales[2] = -540;
+	cout << naturales[2] << endl;*/
+	for (int i = 0; i < TAMANO; i++) {
+		cout << naturales[i]; 
+	}
+for (int elemento : naturales) {
+	cout << elemento << ", ";
+	}
+}

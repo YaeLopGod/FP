@@ -1,0 +1,46 @@
+#include <iostream>
+#include <limits>
+#include <iomanip>
+#include <locale>
+#include <getline>
+using namespace std; 
+
+
+int main() {
+	//manejo de punto decimal y 
+	locale loc("");
+	cout.imbue(loc); 
+	//declarar e imprimir//
+	//es variable string//
+	string texto0 = "Hola Mundo";
+	cout << texto0 << endl; 
+	// Union de dos variables
+	// tipo string
+	string tipoa = "Hello";
+	string tipob = "World!";
+	string saludo = tipoa + tipob;
+	cout << saludo << endl;
+	//introducir un valor en una variable tipo string e imprimirlo//
+	string nombre; 
+	cout << "Introduce tu nombre: "; 
+	cin >> nombre; 
+	cout << "Hola " << nombre << endl; 
+	cout << endl; 
+
+	string apellido; 
+	cout << "Introduce tu apellido: "; 
+	cin >> apellido; 
+	cout << "Hola " << nombre << apellido << endl;
+	
+	cin.ignore();
+	string nombreCompleto; 
+	cout << "Dame tu nombre completo: ";
+	getline(cin, nombreCompleto); 
+	cout << "Tu Nombre Completo es: " << nombreCompleto << endl; 
+
+	cout << nombre[0] << endl; //esto da acceso a un caracter específico//
+
+
+	return 0; 
+
+}
